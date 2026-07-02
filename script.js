@@ -1,5 +1,12 @@
 const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz-6XtMYS1d9HdGol2t8YWntCyiGtUGPz7RnjmxtoEGCn_Aw9Y087GQknuCDtFMsqJB/exec";
 
+let selectedRating = 0;
+
+function rate(stars) {
+  selectedRating = stars;
+  alert("You rated " + stars + " star(s).");
+}
+
 function submitFeedback() {
   const parent = document.getElementById("parent").value;
   const student = document.getElementById("student").value;
@@ -12,6 +19,7 @@ function submitFeedback() {
       parent: parent,
       student: student,
       class: cls,
+      rating: selectedRating,
       feedback: feedback
     })
   })
@@ -21,8 +29,4 @@ function submitFeedback() {
   .catch(() => {
     alert("Error submitting feedback.");
   });
-}
-
-function rate(stars) {
-  alert("You rated " + stars + " star(s).");
 }
