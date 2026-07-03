@@ -36,7 +36,7 @@ function submitFeedback() {
         feedback: feedback
     };
 
-    fetch(WEB_APP_URL="https://script.google.com/macros/s/AKfycbxHKoDo8p7eifHocNdO188cUM6oOUOkSHfLnaFOO3rvzNjULzeOb-vulSFE1nWVJjUs/exec" {
+    fetch(WEB_APP_URL,"https://script.google.com/macros/s/AKfycbxHKoDo8p7eifHocNdO188cUM6oOUOkSHfLnaFOO3rvzNjULzeOb-vulSFE1nWVJjUs/exec" {
         method: "POST",
         mode: "cors",
         headers: {
