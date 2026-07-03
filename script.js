@@ -1,5 +1,4 @@
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz-6XtMYS1d9HdGol2t8YWntCyiGtUGPz7RnjmxtoEGCn_Aw9Y087GQknuCDtFMsqJB/exec";
-
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzxnXBLI6yKjADu3OVT8y8ZlxcMYyNhQUgQsWbmPorQE15RsoN4S1diaaQbbqsqFbKP/exec";
 let selectedRating = 0;
 
 // ⭐ Rating
