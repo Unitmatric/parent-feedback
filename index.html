@@ -1,68 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UNIT MATRIC HIGH SCHOOL</title>
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family:Arial;background:#f4f8ff;text-align:center;">
+<body>
 
-<h1 style="color:#003399;">UNIT MATRIC HIGH SCHOOL</h1>
-<img src="1775634955967.png" width="120">
-<p>📍 Nachipalayam, Coimbatore</p>
-<h3>Parent Feedback Portal</h3>
-<p><b>Please rate and share your valuable feedback.</b></p>
-  
-<hr>
+<div class="container">
 
-<p><b>Parent Name</b></p>
+<img src="1775634955967.png" class="logo">
+
+<h1>UNIT MATRIC HIGH SCHOOL</h1>
+<p class="address">📍 Nachipalayam, Coimbatore</p>
+
+<h2>Parent Feedback Portal</h2>
+
+<label>Parent Name</label>
 <input type="text" id="parent" placeholder="Enter Parent Name">
-<p><b>Student Name</b></p>
+
+<label>Student Name</label>
 <input type="text" id="student" placeholder="Enter Student Name">
 
-<p><b>Class</b></p>
+<label>Class</label>
 <select id="class">
-  <option>Select Class</option>
-  <option>LKG</option>
-  <option>UKG</option>
-  <option>I</option>
-  <option>II</option>
-  <option>III</option>
-  <option>IV</option>
-  <option>V</option>
-  <option>VI</option>
-  <option>VII</option>
-  <option>VIII</option>
-  <option>IX</option>
-  <option>X</option>
-  <option>XI</option>
-  <option>XII</option>
+<option>Select Class</option>
+<option>LKG</option>
+<option>UKG</option>
+<option>I</option>
+<option>II</option>
+<option>III</option>
+<option>IV</option>
+<option>V</option>
+<option>VI</option>
+<option>VII</option>
+<option>VIII</option>
+<option>IX</option>
+<option>X</option>
+<option>XI</option>
+<option>XII</option>
 </select>
 
-<p><b>Rate Today's Meeting</b></p>
-<div style="font-size:30px;">
-<span onclick="rate(1)">⭐</span>
-<span onclick="rate(2)">⭐</span>
-<span onclick="rate(3)">⭐</span>
-<span onclick="rate(4)">⭐</span>
-<span onclick="rate(5)">⭐</span>
+<label>Rate Today's Meeting</label>
+
+<div class="stars">
+
+<span id="s1" onclick="rate(1)">☆</span>
+<span id="s2" onclick="rate(2)">☆</span>
+<span id="s3" onclick="rate(3)">☆</span>
+<span id="s4" onclick="rate(4)">☆</span>
+<span id="s5" onclick="rate(5)">☆</span>
+
 </div>
 
+<label>Your Valuable Feedback</label>
 
-<br><br>
+<textarea id="feedback" placeholder="Write your feedback here..."></textarea>
 
+<button onclick="submitFeedback()">Submit</button>
 
-<p><b>Your Valuable Feedback</b></p>
+</div>
 
-<textarea id="feedback" rows="8" cols="35" placeholder="Please share your suggestions or feedback..."></textarea>
-
-<br><br>
-  
-  <button onclick="submitFeedback()">Submit</button>
-</button>
-<script>
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz-6XtMYS1d9HdGol2t8YWntCyiGtUGPz7RnjmxtoEGCn_Aw9Y087GQknuCDtFMsqJB/exec";
-</script>
 <script src="script.js"></script>
+
 </body>
 </html>
